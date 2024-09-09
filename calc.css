@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 52px 52px 52px 52px;
+    margin: 50px 0 0 50px;
+    
+    height: 450px;
+    width: 270px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(41, 40, 40);
+    gap: 8px;
+    padding: 50px 0px 0px;
+    border-radius: 15px;
+    
+}
+.container input:not(.output,.clear, .modulus){
+    color: white;
+    height: 50px;
+    margin: 2px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    
+    
+}
+
+.clear, .modulus{
+    height: 50px;
+    margin: 2px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(185, 184, 184); 
+    color: black;
+}
+
+.plus, .minus, .multiply, .division, .equalTo{
+    background-color: rgb(241, 101, 7);
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .decimal{
+    background-color: rgb(65, 60, 60);
+}
+.clear{
+    grid-column: 1 / span 2;
+    
+}
+
+.zero{
+    /* grid-column: 1/3; */
+
+}
+
+.equalTo{
+    grid-column: 3/5;
+}
+
+.container .output{
+    grid-column: 1/5;
+    height: 60px;
+    font-size: 40px;
+     text-align:right;
+    background-color: rgb(206, 216, 215);
+   color: black;
+   border-radius: 5px;
+    margin: 10px 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="calc.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.1.1/math.js" integrity="sha512-fMI/ndUubOcpzblrAaOFszYIE2iDKua+Cxg9dZp3cAkhsRWEHHbKtFCElHEQ50viX502yj7nFEEcxq2SOTNrIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <form class="container">
+        <input type="text" id="output" value="" class="output" onfocus="this.style.outline='none'" readonly>
+        <input type="button" class="clear" value="AC" onclick="clearFunction('')">
+        <input type="button" class="modulus" value="%" onclick="resultFunction('%')">
+        <input type="button" class="plus" value="+" onclick="resultFunction('+')">
+        <input type="button" class="seven" value="7" onclick="resultFunction('7')">
+        <input type="button" class="eight" value="8" onclick="resultFunction('8')">
+        <input type="button" class="nine" value="9" onclick="resultFunction('9')">
+        <input type="button" class="minus" value="-" onclick="resultFunction('-')">
+        <input type="button" class="four" value="4" onclick="resultFunction('4')">
+        <input type="button" class="five" value="5" onclick="resultFunction('5')">
+        <input type="button" class="six" value="6" onclick="resultFunction('6')">
+        <input type="button" class="multiply" value="*" onclick="resultFunction('*')">
+        <input type="button" class="one" value="1" onclick="resultFunction('1')">
+        <input type="button" class="two" value="2" onclick="resultFunction('2')">
+        <input type="button" class="three" value="3" onclick="resultFunction('3')">
+        <input type="button" class="division" value="/" onclick="resultFunction('/')">
+        <input type="button" class="zero" value="0" onclick="resultFunction('0')">
+        <input type="button" class="decimal" value="." onclick="resultFunction('.')">
+        <input type="button" class="equalTo" value="=" onclick="equalToFunction('=')">
+    </form>
+    <script src="calc.js"></script>
+</body>
+</html>
